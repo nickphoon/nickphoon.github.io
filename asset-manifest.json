@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e407560.css",
-    "main.js": "/static/js/main.00346a1b.js",
+    "main.css": "/static/css/main.8b13553b.css",
+    "main.js": "/static/js/main.c1b22f31.js",
     "static/js/453.b21437c2.chunk.js": "/static/js/453.b21437c2.chunk.js",
+    "static/media/SiTnDrink.png": "/static/media/SiTnDrink.2eb7aa28b8874deca79d.png",
+    "static/media/CosmicQuest.png": "/static/media/CosmicQuest.0169a377871d8189ba7d.png",
+    "static/media/PinkVisuals.png": "/static/media/PinkVisuals.6588803934b58764c65e.png",
+    "static/media/hotelSentiment.png": "/static/media/hotelSentiment.5a13581205a22a8e1687.png",
     "static/media/SIT.png": "/static/media/SIT.d0881cfe1dd8ed5f8a6d.png",
     "static/media/MOM.jpg": "/static/media/MOM.0a9b6de631323abe10f9.jpg",
     "index.html": "/index.html",
-    "main.9e407560.css.map": "/static/css/main.9e407560.css.map",
-    "main.00346a1b.js.map": "/static/js/main.00346a1b.js.map",
+    "main.8b13553b.css.map": "/static/css/main.8b13553b.css.map",
+    "main.c1b22f31.js.map": "/static/js/main.c1b22f31.js.map",
     "453.b21437c2.chunk.js.map": "/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e407560.css",
-    "static/js/main.00346a1b.js"
+    "static/css/main.8b13553b.css",
+    "static/js/main.c1b22f31.js"
   ]
 }
