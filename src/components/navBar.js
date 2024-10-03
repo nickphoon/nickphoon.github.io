@@ -7,8 +7,8 @@ import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-
 import { Link } from 'react-scroll';
 
 const navigation = [
-  { name: 'Home', to: 'home' },
   { name: 'About', to: 'about' },
+  { name: 'Experience', to: 'experience' },
   { name: 'Projects', to: 'projects' },
   { name: 'Contact', to: 'contact' },
 ];
@@ -40,9 +40,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 flex items-center">
-              <h1 className="text-white font-bold text-2xl">My Portfolio</h1>
-            </div>
+            
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-6">
                 {navigation.map((item) => (
