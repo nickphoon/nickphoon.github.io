@@ -1,7 +1,7 @@
-// src/App.js
 import React, { useEffect, useState } from 'react';
 import Navbar from './components/navBar';
 import JobExperience from './components/jobExperience';
+import ProjectCard from './components/project';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -9,6 +9,10 @@ import SIT from './assets/icons/SIT.png';
 import SCB from './assets/icons/SCB.png';
 import SAF from './assets/icons/SAF.png';
 import MOM from './assets/icons/MOM.jpg';
+import HORSAUI from './assets/projects/hotelSentiment.png';
+import COSMIC from './assets/projects/CosmicQuest.png';
+import SITNDRINK from './assets/projects/SiTnDrink.png';
+import PINK from './assets/projects/PinkVisuals.png'
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
 
@@ -30,10 +34,10 @@ function App() {
       setDisableAnimations(false); // Re-enable animations after 500ms (adjust if needed)
     }, 500);
   };
-  // Sample job experience data
+  // Job Experience
   const jobExperiences = [
     {
-      companyImage: SIT, // Replace with the actual company logo URL
+      companyImage: SIT, 
       companyName: 'Singapore Institute of Technology',
       jobTitle: 'Student Tutor for Programming Fundamentals (Python, C)',
       date: 'Sep 2024 - Present',
@@ -41,7 +45,7 @@ function App() {
       skills: ['Python', 'C Programming Language'],
     },
     {
-      companyImage: SIT, // Replace with the actual company logo URL
+      companyImage: SIT, 
       companyName: 'Singapore Institute of Technology',
       jobTitle: 'Student Tutor for Data Structures and Algorithms',
       date: 'June 2024 - August 2024',
@@ -49,7 +53,7 @@ function App() {
       skills: ['Data Structures', 'Algorithm Optimzation', 'Algorithm Design', 'Python'],
     },
     {
-      companyImage: SCB, // Replace with the actual company logo URL
+      companyImage: SCB, 
       companyName: 'Standard Chartered',
       jobTitle: 'Analyst, Security Development (Attachment)',
       date: 'Aug 2023 - Sep 2023',
@@ -58,7 +62,7 @@ function App() {
       skills: ['CI/CD', 'Azure DevOps', 'Data Analysis', 'Data Processing'],
     },
     {
-      companyImage: SAF, // Replace with the actual company logo URL
+      companyImage: SAF, 
       companyName: 'Singapore Armed Forces (SAF)',
       jobTitle: 'Software Developer',
       date: 'Jul 2020 - Jun 2022',
@@ -67,7 +71,7 @@ function App() {
       skills: ['OpenCV', 'Computer Vision', 'Machine Learning', 'Object Detection', 'Microsoft Power BI'],
     },
     {
-      companyImage: MOM, // Replace with the actual company logo URL
+      companyImage: MOM, 
       companyName: 'Ministry of Manpower',
       jobTitle: 'Student Intern',
       date: 'Apr 2019 - Sep 2019',
@@ -76,6 +80,68 @@ function App() {
       ],
       skills: ['UI/UX', 'User Interface Design', 'Human Computer Interaction'],
     },
+  ];
+  
+  const projects = [
+    {
+      title: 'HORSAUI',
+      description: 'A web application that analyses and visualizes sentiments from hotel reviews, allowing travellers to identify the best hotels at a glance.',
+      image: HORSAUI,
+      techStack: ['Flask', 'Selenium', 'Matplotlib'],
+      videoUrl: "https://www.youtube.com/watch?v=pDQ0jBZzDpc"
+
+    },
+    {
+      title: 'Cosmic Quest',
+      description: 'Application of object-oriented programming to design a space exploration game to educate users on the different planets and its environments.',
+      image: COSMIC,
+      techStack: ['libGDX', 'SQLite', "C++"],
+      videoUrl: ""
+    },
+    {
+      title: 'SiT n Drink',
+      description: 'An e-commerce website using PHP and mySQl that supports email communication using PHPMailer.',
+      image: SITNDRINK,
+      techStack: ['PHP', 'JavaScript', "MySQL"],
+      videoUrl: ""
+    },
+    {
+      title: 'Pink Visuals',
+      description: 'A website for visualising Data Structures and Algorithms such as Hash Tables and Pathfinding Algorithms like Djikstra and A* .',
+      image: PINK,
+      techStack: ['Javascript', 'Data Structures and Algorithms'],
+      videoUrl: ""
+    },
+
+    {
+      title: 'HCI',
+      description: '',
+      image: '',
+      techStack: [],
+      videoUrl: ""
+    },
+    {
+      title: 'Bandify',
+      description: '-',
+      image: '',
+      techStack: [],
+      videoUrl: ""
+    },
+    {
+      title: 'MAD',
+      description: '-',
+      image: '',
+      techStack: [],
+      videoUrl: ""
+    },
+    {
+      title: 'Golf Swing Analysis',
+      description: '-',
+      image: '',
+      techStack: [],
+      videoUrl: ""
+    },
+
   ];
 
   return (
@@ -87,7 +153,7 @@ function App() {
         <section
           id="about"
           className="w-full max-w-5xl min-h-screen flex items-center justify-center p-8 rounded-lg shadow-lg"
-          data-aos={!disableAnimations ? "zoom-in" : ""} // Conditionally add AOS attribute
+          data-aos={!disableAnimations ? "fade-up" : ""} 
         >
           <div className="text-center">
             <h1 className="text-4xl font-bold">About Me</h1>
@@ -98,7 +164,7 @@ function App() {
         <section
           id="experience"
           className="w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
-          data-aos={!disableAnimations ? "fade-up" : ""}
+          data-aos={!disableAnimations ? "fade-left" : ""}
         >
           <h1 className="text-4xl font-bold text-center mb-8">Experiences</h1>
           {jobExperiences.map((experience, index) => (
@@ -115,22 +181,21 @@ function App() {
         </section>
 
         <section
-          id="projects"
-          className="h-screen w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
-          data-aos={!disableAnimations ? "fade-up" : ""} // Conditionally add AOS attribute
-        >
-          <h1 className="text-4xl font-bold text-center">My Projects</h1>
-          <p className="mt-4 text-center">This is where you showcase your projects with descriptions and links.</p>
-        </section>
+      id="projects"
+      className="w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
+      data-aos={!disableAnimations ? "fade-right" : ""}
+    >
+      <h1 className="text-4xl font-bold text-center">Projects</h1>
+      
+      {/* Project Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-8">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
+    </section>
 
-        <section
-          id="contact"
-          className="h-screen w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
-          data-aos={!disableAnimations ? "fade-up" : ""} // Conditionally add AOS attribute
-        >
-          <h1 className="text-4xl font-bold text-center">Contact</h1>
-          <p className="mt-4 text-center">Include your contact information or a contact form here.</p>
-        </section>
+        
       </div>
     </div>
   );

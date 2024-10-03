@@ -1,9 +1,8 @@
-// src/components/JobExperience.js
 import React from 'react';
 
 function JobExperience({ companyImage, companyName, jobTitle, date, skills, description }) {
   return (
-    <div className="flex items-start space-x-4 mb-8 p-4 bg-gray-800 rounded-lg shadow-lg">
+    <div className="flex items-start space-x-4 mb-8 p-4 bg-gray-800 rounded-lg shadow-lg ">
       <img src={companyImage} alt={`${companyName} logo`} className="h-16 w-16 rounded-md object-cover" />
       <div>
         <h2 className="text-2xl font-bold text-gray-250">{jobTitle}</h2>

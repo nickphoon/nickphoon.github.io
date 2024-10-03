@@ -1,7 +1,5 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-scroll';
@@ -10,7 +8,6 @@ const navigation = [
   { name: 'About', to: 'about' },
   { name: 'Experience', to: 'experience' },
   { name: 'Projects', to: 'projects' },
-  { name: 'Contact', to: 'contact' },
 ];
 
 function classNames(...classes) {
