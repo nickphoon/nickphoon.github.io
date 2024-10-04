@@ -11,7 +11,7 @@ import SAF from './assets/icons/SAF.png';
 import MOM from './assets/icons/MOM.jpg';
 import HORSAUI from './assets/projects/hotelSentiment.png';
 import COSMIC from './assets/projects/CosmicQuest.png';
-import SITNDRINK from './assets/projects/SiTnDrink.png';
+// import SITNDRINK from './assets/projects/SiTnDrink.png';
 import PINK from './assets/projects/PinkVisuals.png';
 import MEDIVR from './assets/projects/MediVR.png';
 import SignLINGO from './assets/projects/SignLingo.png';
