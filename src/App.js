@@ -12,7 +12,9 @@ import MOM from './assets/icons/MOM.jpg';
 import HORSAUI from './assets/projects/hotelSentiment.png';
 import COSMIC from './assets/projects/CosmicQuest.png';
 import SITNDRINK from './assets/projects/SiTnDrink.png';
-import PINK from './assets/projects/PinkVisuals.png'
+import PINK from './assets/projects/PinkVisuals.png';
+import MEDIVR from './assets/projects/MediVR.png';
+import SignLINGO from './assets/projects/SignLingo.png';
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
 
@@ -88,7 +90,7 @@ function App() {
       description: 'A web application that analyses and visualizes sentiments from hotel reviews, allowing travellers to identify the best hotels at a glance.',
       image: HORSAUI,
       techStack: ['Flask', 'Selenium', 'Matplotlib'],
-      videoUrl: "https://www.youtube.com/watch?v=pDQ0jBZzDpc"
+      videoUrl: "https://youtu.be/6rroISIO6HI"
 
     },
     {
@@ -96,51 +98,47 @@ function App() {
       description: 'Application of object-oriented programming to design a space exploration game to educate users on the different planets and its environments.',
       image: COSMIC,
       techStack: ['libGDX', 'SQLite', "C++"],
-      videoUrl: ""
-    },
-    {
-      title: 'SiT n Drink',
-      description: 'An e-commerce website using PHP and mySQl that supports email communication using PHPMailer.',
-      image: SITNDRINK,
-      techStack: ['PHP', 'JavaScript', "MySQL"],
-      videoUrl: ""
-    },
-    {
-      title: 'Pink Visuals',
-      description: 'A website for visualising Data Structures and Algorithms such as Hash Tables and Pathfinding Algorithms like Djikstra and A* .',
-      image: PINK,
-      techStack: ['Javascript', 'Data Structures and Algorithms'],
-      videoUrl: ""
+      videoUrl: "https://youtu.be/A6BV51frMWQ"
     },
 
     {
-      title: 'HCI',
-      description: '',
-      image: '',
-      techStack: [],
-      videoUrl: ""
+      title: 'Pink Visuals',
+      description: 'A web application for visualising Data Structures and Algorithms such as Hash Tables and Pathfinding Algorithms like Djikstra and A* .',
+      image: PINK,
+      techStack: ['Javascript', 'Data Structures and Algorithms'],
+      videoUrl: "https://youtu.be/_B1rxbQVOoc"
+    },
+
+    {
+      title: 'MediVR',
+      description: 'A Unity-built mobile app designed to help healthcare students transition from school to real-world clinical settings through user-centered experiments and a mixed reality medical simulator.',
+      image: MEDIVR,
+      techStack: ['Unity', 'AR/VR'],
+      videoUrl: "https://youtu.be/MpSCaSuhWWU"
     },
     {
-      title: 'Bandify',
-      description: '-',
-      image: '',
-      techStack: [],
-      videoUrl: ""
+      title: 'SignLingo',
+      description: 'A sign language-learning mobile application that serves as a dynamic educational tool, providing students with real-time feedback and practical exercises.',
+      image: SignLINGO,
+      techStack: ['Kotlin','MediaPipe'],
+      videoUrl: "https://youtu.be/2S5p5F2Antk"
     },
-    {
-      title: 'MAD',
-      description: '-',
-      image: '',
-      techStack: [],
-      videoUrl: ""
-    },
-    {
-      title: 'Golf Swing Analysis',
-      description: '-',
-      image: '',
-      techStack: [],
-      videoUrl: ""
-    },
+    // {
+    //   title: 'SiT n Drink',
+    //   description: 'An e-commerce website using PHP and mySQl that supports email communication using PHPMailer.',
+    //   image: SITNDRINK,
+    //   techStack: ['PHP', 'JavaScript', "MySQL"],
+    //   videoUrl: ""
+    // },
+    // {
+    //   title: 'AI-Driven Sport Analysis and Improvement System',
+    //   description: '-',
+    //   image: '',
+    //   techStack: ['django','tailwindcss', 'MediaPipe','mongoDB'],
+    //   videoUrl: ""
+    // },
+
+    // can put bandify, SiT n Drink, AI-Driven Sports Analysis and Improvement System
 
   ];
 
