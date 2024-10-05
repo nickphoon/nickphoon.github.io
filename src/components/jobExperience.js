@@ -5,8 +5,8 @@ function JobExperience({ companyImage, companyName, jobTitle, date, skills, desc
     <div className="flex items-start space-x-4 mb-8 p-4 bg-gray-800 rounded-lg shadow-lg ">
       <img src={companyImage} alt={`${companyName} logo`} className="h-16 w-16 rounded-md object-cover" />
       <div>
-        <h2 className="text-2xl font-bold text-gray-250">{jobTitle}</h2>
-        <h3 className="text-lg text-gray-400">{companyName}</h3>
+        <h2 className="text-2xl font-bold"style={{ color: '#4ca4ab' }}>{jobTitle}</h2>
+        <h3 className="text-lg ">{companyName}</h3>
         <p className="text-sm text-gray-400">{date}</p>
         {/* Render description based on its type */}
         {Array.isArray(description) ? (

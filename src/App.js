@@ -4,6 +4,7 @@ import JobExperience from './components/jobExperience';
 import ProjectCard from './components/project';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import ScrollToTop from './components/scrollToTop';
 
 import SIT from './assets/icons/SIT.png';
 import SCB from './assets/icons/SCB.png';
@@ -86,12 +87,13 @@ function App() {
   ];
   
   const projects = [
+
     {
-      title: 'AI-Driven Sport Analysis and Improvement System',
-      description: '-',
+      title: 'DSA Tutor ChatBot',
+      description: 'Currently developing a chatbot on Gradio that utilises Retrieval Augmented Generation (RAG) to enhance accuracy and for better contextual awareness',
       image: '',
       date:"Present",
-      techStack: ['django','tailwindcss', 'MediaPipe','mongoDB'],
+      techStack: ['Gradio','Prompt Engineering', 'AI','Retrieval-augmented Generation'],
       videoUrl: ""
     },
     {
@@ -161,7 +163,7 @@ function App() {
 
   return (
     
-    <div className="bg-gray-800 min-h-screen text-gray-400">
+    <div className="bg-gray-800 min-h-screen text-gray-400 overflow-x-hidden">
       <Navbar onLinkClick={handleLinkClick} /> {/* Pass the click handler to Navbar */}
       <div className="flex flex-col items-center justify-center mt-20">
         
@@ -227,7 +229,7 @@ function App() {
         ))}
       </div>
     </section>
-
+    <ScrollToTop />
         
       </div>
     </div>
