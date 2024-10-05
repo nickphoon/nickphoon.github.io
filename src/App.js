@@ -86,42 +86,47 @@ function App() {
   
   const projects = [
     {
-      title: 'HORSAUI',
-      description: 'A web application that analyses and visualizes sentiments from hotel reviews, allowing travellers to identify the best hotels at a glance.',
-      image: HORSAUI,
-      techStack: ['Flask', 'Selenium', 'Matplotlib'],
-      videoUrl: "https://youtu.be/6rroISIO6HI"
-
+      title: 'SignLingo',
+      description: 'A sign language-learning mobile application that serves as a dynamic educational tool, providing students with real-time feedback and practical exercises.',
+      image: SignLINGO,
+      date: "Mar 2024",
+      techStack: ['Kotlin','MediaPipe', 'Object Detection'],
+      videoUrl: "https://youtu.be/2S5p5F2Antk"
     },
-    {
-      title: 'Cosmic Quest',
-      description: 'Application of object-oriented programming to design a space exploration game to educate users on the different planets and its environments.',
-      image: COSMIC,
-      techStack: ['libGDX', 'SQLite', "C++"],
-      videoUrl: "https://youtu.be/A6BV51frMWQ"
-    },
-
-    {
-      title: 'Pink Visuals',
-      description: 'A web application for visualising Data Structures and Algorithms such as Hash Tables and Pathfinding Algorithms like Djikstra and A* .',
-      image: PINK,
-      techStack: ['Javascript', 'Data Structures and Algorithms'],
-      videoUrl: "https://youtu.be/_B1rxbQVOoc"
-    },
-
+  
     {
       title: 'MediVR',
       description: 'A Unity-built mobile app designed to help healthcare students transition from school to real-world clinical settings through user-centered experiments and a mixed reality medical simulator.',
       image: MEDIVR,
-      techStack: ['Unity', 'AR/VR'],
+      date: "Oct 2023",
+      techStack: ['Unity', 'AR/VR', 'C#'],
       videoUrl: "https://youtu.be/MpSCaSuhWWU"
     },
     {
-      title: 'SignLingo',
-      description: 'A sign language-learning mobile application that serves as a dynamic educational tool, providing students with real-time feedback and practical exercises.',
-      image: SignLINGO,
-      techStack: ['Kotlin','MediaPipe'],
-      videoUrl: "https://youtu.be/2S5p5F2Antk"
+      title: 'Pink Visuals',
+      description: 'A web application for visualising Data Structures and Algorithms such as Hash Tables and Pathfinding Algorithms like Djikstra and A* .',
+      image: PINK,
+      date: "Jul 2023",
+      techStack: ['Javascript', 'Data Structures and Algorithms'],
+      videoUrl: "https://youtu.be/_B1rxbQVOoc"
+    },
+    
+    {
+      title: 'Cosmic Quest',
+      description: 'Application of object-oriented programming to design a space exploration game to educate users on the different planets and its environments.',
+      image: COSMIC,
+      date: "Mar 2023",
+      techStack: ['libGDX', 'SQLite', "Java"],
+      videoUrl: "https://youtu.be/A6BV51frMWQ"
+    },
+    {
+      title: 'HORSAUI',
+      description: 'A web application that analyses and visualizes sentiments from hotel reviews, allowing travellers to identify the best hotels at a glance.',
+      image: HORSAUI,
+      date: "Sep 2022",
+      techStack: ['Flask', 'Selenium', 'Matplotlib'],
+      videoUrl: "https://youtu.be/6rroISIO6HI"
+
     },
     // {
     //   title: 'SiT n Drink',
