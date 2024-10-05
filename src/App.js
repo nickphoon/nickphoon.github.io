@@ -19,6 +19,7 @@ import MEDIVR from './assets/projects/MediVR.png';
 import SignLINGO from './assets/projects/SignLingo.png';
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -29,7 +30,23 @@ function App() {
       offset: 120, // Offset value in pixels to delay the animation
     });
     document.title = "Nicholas Phoon";
+    // Check if the view is mobile
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768); // Assuming mobile view is <= 768px
+    };
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Set initial value
+    handleResize();
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
+  
 
   // Handle Navbar Link Click
   const handleLinkClick = () => {
@@ -199,7 +216,7 @@ function App() {
         <section
           id="experience"
           className="w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
-          data-aos={!disableAnimations ? "fade-left" : ""}
+          data-aos={!disableAnimations ? (isMobileView ? "fade-down" : "fade-left") : ""}
         >
           <h1 className="text-4xl font-bold text-center mb-8">Experiences</h1>
           {jobExperiences.map((experience, index) => (
@@ -218,7 +235,7 @@ function App() {
         <section
       id="projects"
       className="w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
-      data-aos={!disableAnimations ? "fade-right" : ""}
+      data-aos={!disableAnimations ? (isMobileView ? "fade-down" : "fade-right") : ""}x
     >
       <h1 className="text-4xl font-bold text-center">Projects</h1>
       
