@@ -87,6 +87,14 @@ function App() {
   
   const projects = [
     {
+      title: 'AI-Driven Sport Analysis and Improvement System',
+      description: '-',
+      image: '',
+      date:"Present",
+      techStack: ['django','tailwindcss', 'MediaPipe','mongoDB'],
+      videoUrl: ""
+    },
+    {
       title: 'SignLingo',
       description: 'A sign language-learning mobile application that serves as a dynamic educational tool, providing students with real-time feedback and practical exercises.',
       image: SignLINGO,
@@ -145,13 +153,7 @@ function App() {
     //   techStack: ['PHP', 'JavaScript', "MySQL"],
     //   videoUrl: ""
     // },
-    // {
-    //   title: 'AI-Driven Sport Analysis and Improvement System',
-    //   description: '-',
-    //   image: '',
-    //   techStack: ['django','tailwindcss', 'MediaPipe','mongoDB'],
-    //   videoUrl: ""
-    // },
+    
 
     // can put bandify, SiT n Drink, AI-Driven Sports Analysis and Improvement System
 
@@ -163,16 +165,34 @@ function App() {
       <Navbar onLinkClick={handleLinkClick} /> {/* Pass the click handler to Navbar */}
       <div className="flex flex-col items-center justify-center mt-20">
         
-        <section
-          id="about"
-          className="w-full max-w-5xl min-h-screen flex items-center justify-center p-8 rounded-lg shadow-lg"
-          data-aos={!disableAnimations ? "fade-up" : ""} 
-        >
-          <div className="text-center">
-            <h1 className="text-4xl font-bold">About Me</h1>
-            <p className="mt-4">Year 3 Student pursuing a degree in Software Engineering in Singapore Institute of Technology with a strong foundation in programming languages including Python, Javascript, Java, C/C++, C#, SQL and Kotlin. Experienced in developing machine learning solutions for the Singapore Armed Forces (SAF), leveraging object detection algorithms to automate and optimize daily operations. Skilled in building robust applications using modern frameworks such as Django, Flask, and React, with a focus on delivering user-centric and efficient software solutions.</p>
-          </div>
-        </section>
+      <section
+  id="about"
+  className="w-full max-w-5xl min-h-screen flex items-center justify-center p-8 rounded-lg shadow-lg"
+>
+  <div className="text-center">
+    {/* Your name animates first */}
+    <h1
+      className="text-5xl font-bold"
+      style={{ color: '#4ca4ab' }}
+      data-aos={!disableAnimations ? "fade-up" : ""}
+      data-aos-delay="0"
+    >
+      Hi, I'm Nicholas Phoon
+    </h1>
+
+    {/* About Me section animates together */}
+    <div
+      data-aos={!disableAnimations ? "fade-up" : ""}
+      data-aos-delay="1000"
+    >
+      <h2 className="text-3xl font-bold mt-4">About Me</h2>
+      <p className="mt-4">
+        Year 3 Student pursuing a degree in Software Engineering in Singapore Institute of Technology with a strong foundation in programming languages including Python, Javascript, Java, C/C++, C#, SQL, and Kotlin. Experienced in developing machine learning solutions for the Singapore Armed Forces (SAF), leveraging object detection algorithms to automate and optimize daily operations. Skilled in building robust applications using modern frameworks such as Django, Flask, and React, with a focus on delivering user-centric and efficient software solutions.
+      </p>
+    </div>
+  </div>
+</section>
+
 
         <section
           id="experience"
