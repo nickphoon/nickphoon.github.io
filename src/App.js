@@ -94,14 +94,7 @@ function App() {
       techStack: ['Kotlin','MediaPipe', 'Object Detection'],
       videoUrl: "https://youtu.be/2S5p5F2Antk"
     },
-    {
-      title: 'Groom&Go',
-      description: 'Twin e-commerce websites, one powered by MySQL and the other by MongoDB, have been developed to evaluate and compare the read and write speeds of each database system.',
-      image: GROOMGO,
-      date: "Oct 2023",
-      techStack: ['mongoDB', 'mySQL'],
-      videoUrl: "https://youtu.be/oAPFzkiS-5c"
-    },
+    
   
     {
       title: 'MediVR',
@@ -110,6 +103,14 @@ function App() {
       date: "Oct 2023",
       techStack: ['Unity', 'AR/VR', 'C#'],
       videoUrl: "https://youtu.be/MpSCaSuhWWU"
+    },
+    {
+      title: 'Groom&Go',
+      description: 'Twin e-commerce websites, one powered by MySQL and the other by MongoDB, have been developed to evaluate and compare the read and write speeds of each database system.',
+      image: GROOMGO,
+      date: "Sep 2023",
+      techStack: ['mongoDB', 'mySQL'],
+      videoUrl: "https://youtu.be/oAPFzkiS-5c"
     },
     {
       title: 'Pink Visuals',
