@@ -11,6 +11,7 @@ import SAF from './assets/icons/SAF.png';
 import MOM from './assets/icons/MOM.jpg';
 import HORSAUI from './assets/projects/hotelSentiment.png';
 import COSMIC from './assets/projects/CosmicQuest.png';
+import GROOMGO from './assets/projects/Groom&Go.png';
 // import SITNDRINK from './assets/projects/SiTnDrink.png';
 import PINK from './assets/projects/PinkVisuals.png';
 import MEDIVR from './assets/projects/MediVR.png';
@@ -92,6 +93,14 @@ function App() {
       date: "Mar 2024",
       techStack: ['Kotlin','MediaPipe', 'Object Detection'],
       videoUrl: "https://youtu.be/2S5p5F2Antk"
+    },
+    {
+      title: 'Groom&Go',
+      description: 'Twin e-commerce websites, one powered by MySQL and the other by MongoDB, have been developed to evaluate and compare the read and write speeds of each database system.',
+      image: GROOMGO,
+      date: "Oct 2023",
+      techStack: ['mongoDB', 'mySQL'],
+      videoUrl: "https://youtu.be/oAPFzkiS-5c"
     },
   
     {
