@@ -145,7 +145,9 @@ function App() {
       image: PINK,
       date: "Jul 2023",
       techStack: ['Javascript', 'Data Structures and Algorithms'],
-      videoUrl: "https://youtu.be/_B1rxbQVOoc"
+      videoUrl: "https://youtu.be/_B1rxbQVOoc",
+      sourceCodeUrl:"https://github.com/nickphoon/pinkvisuals",
+      webpageUrl:"https://nickphoon.github.io/pinkvisuals/home.html",
     },
     
     {
@@ -162,8 +164,8 @@ function App() {
       image: HORSAUI,
       date: "Sep 2022",
       techStack: ['Flask', 'Selenium', 'Matplotlib'],
-      videoUrl: "https://youtu.be/6rroISIO6HI"
-
+      videoUrl: "https://youtu.be/6rroISIO6HI",
+      sourceCodeUrl:"https://github.com/nickphoon/HORSAUI",
     },
     // {
     //   title: 'SiT n Drink',

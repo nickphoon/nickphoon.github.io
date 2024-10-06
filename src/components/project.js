@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLaptop } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectCard = ({ project }) => {
   // Conditional rendering for the image or fallback text
@@ -14,14 +17,44 @@ const ProjectCard = ({ project }) => {
     </div>
   );
 
+  // Conditional rendering for icons
+  const renderIcons = (
+    <div className="flex justify-end space-x-4 px-6 py-2">
+      {project.sourceCodeUrl && (
+        <a
+          href={project.sourceCodeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-700 dark:text-gray-300 hover:text-white"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2xl" />
+        </a>
+      )}
+      {project.webpageUrl && (
+        <a
+          href={project.webpageUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-700 dark:text-gray-300 hover:text-white"
+        >
+          <FontAwesomeIcon icon={faLaptop} size="2xl" />
+        </a>
+      )}
+    </div>
+  );
+
   // Conditional rendering for the project card's content
   const cardContent = (
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800">
       {renderImage}
       <div className="px-6 py-4">
-        <h3 className="font-bold text-xl mb-2"style={{ color: '#4ca4ab' }}>{project.title}</h3>
+        <h3 className="font-bold text-xl mb-2" style={{ color: '#4ca4ab' }}>
+          {project.title}
+        </h3>
         <p className="text-sm text-gray-400">{project.date}</p>
-        <p className="text-gray-700 dark:text-gray-300 text-base">{project.description}</p>
+        <p className="text-gray-700 dark:text-gray-300 text-base">
+          {project.description}
+        </p>
       </div>
       <div className="px-6 pt-4 pb-2">
         {project.techStack.map((tech, index) => (
@@ -33,6 +66,7 @@ const ProjectCard = ({ project }) => {
           </span>
         ))}
       </div>
+      {renderIcons}
     </div>
   );
 
