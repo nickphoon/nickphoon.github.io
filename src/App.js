@@ -17,6 +17,7 @@ import GROOMGO from './assets/projects/Groom&Go.png';
 import PINK from './assets/projects/PinkVisuals.png';
 import MEDIVR from './assets/projects/MediVR.png';
 import SignLINGO from './assets/projects/SignLingo.png';
+import CVHelper from './assets/projects/CVHelper.png';
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
@@ -104,6 +105,7 @@ function App() {
   ];
   
   const projects = [
+    
 
     {
       title: 'DSA Tutor ChatBot',
@@ -112,6 +114,14 @@ function App() {
       date:"Present",
       techStack: ['Gradio','Prompt Engineering', 'AI','Retrieval-augmented Generation'],
       videoUrl: ""
+    },
+    {
+      title: 'CVHelper',
+      description: 'A Python GUI developed to reduce time spent processing data such as converting videos to frames, data augmentation and sorting images by classes',
+      image: CVHelper,
+      date:"Oct 2024",
+      techStack: ['PyQT6','OpenCV', 'NumPy'],
+      sourceCodeUrl: "https://github.com/nickphoon/CVHelper.git"
     },
     {
       title: 'SignLingo',
