@@ -1,8 +1,8 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faEnvelope, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-scroll';
 
 const navigation = [
@@ -80,8 +80,8 @@ export default function Navbar() {
                 <a href="https://github.com/nickphoon" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                   <FontAwesomeIcon icon={faGithub} className="h-8 w-8" />
                 </a>
-                <a href="https://instagram.com/nicpkj" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                  <FontAwesomeIcon icon={faInstagram} className="h-8 w-8" />
+                <a href="mailto: potatonicholas@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                  <FontAwesomeIcon icon={faEnvelope} className="h-8 w-8" />
                 </a>
               </div>
             </div>
