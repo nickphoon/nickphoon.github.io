@@ -18,6 +18,7 @@ import PINK from './assets/projects/PinkVisuals.png';
 import MEDIVR from './assets/projects/MediVR.png';
 import SignLINGO from './assets/projects/SignLingo.png';
 import CVHelper from './assets/projects/CVHelper.png';
+import GOLF from './assets/projects/Golf.png';
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
@@ -105,16 +106,17 @@ function App() {
   ];
   
   const projects = [
-    
 
     {
-      title: 'DSA Tutor ChatBot',
-      description: 'Currently developing a chatbot on Gradio that utilises Retrieval Augmented Generation (RAG) to enhance accuracy and for better contextual awareness',
-      image: '',
-      date:"Present",
-      techStack: ['Gradio','Prompt Engineering', 'AI','Retrieval-augmented Generation'],
+      title: 'AI-Driven Sport Analysis and Improvement System',
+      description: 'This project develops a Proof-of-Concept AI model using Computer Vision to analyze golf swings and identify key body parts from video footage. A Front-End system provides golfers with detailed, data-driven feedback to enhance their performance.',
+      image: GOLF,
+      date:"Dec 2024",
+      techStack: ['Django','Mediapipe', 'mongoDB Atlas','Google Cloud Platform', 'Docker', 'TailWindCSS'],
       videoUrl: ""
     },
+
+   
     {
       title: 'CVHelper',
       description: 'A Python GUI developed to reduce time spent processing data such as converting videos to frames, data augmentation and sorting images by classes',
