@@ -113,7 +113,7 @@ function App() {
       image: GOLF,
       date:"Dec 2024",
       techStack: ['Django','Mediapipe', 'mongoDB Atlas','Google Cloud Platform', 'Docker', 'TailWindCSS'],
-      videoUrl: ""
+      videoUrl: "https://www.youtube.com/watch?v=-C7gg1LaQ08"
     },
 
    
