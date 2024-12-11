@@ -19,6 +19,7 @@ import MEDIVR from './assets/projects/MediVR.png';
 import SignLINGO from './assets/projects/SignLingo.png';
 import CVHelper from './assets/projects/CVHelper.png';
 import GOLF from './assets/projects/Golf.png';
+import WHEEL from './assets/projects/WHEEL.png';
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
@@ -107,6 +108,14 @@ function App() {
   
   const projects = [
 
+    { title: 'WHEEL OF RESTAURANTS',
+      description: 'A Spin the wheel for deciding on what to eat based on current/selected location. Locations are not accurate for the time being...',
+      image: WHEEL,
+      date:"Dec 2024",
+      techStack: ['HTML', 'CSS', 'JAVASCRIPT'],
+      sourceCodeUrl:"https://github.com/nickphoon/WHEELOFRESTAURANT",
+      webpageUrl:"https://nickphoon.github.io/WHEELOFRESTAURANT/",
+    },
     {
       title: 'AI-Driven Sport Analysis and Improvement System',
       description: 'This project develops a Proof-of-Concept AI model using Computer Vision to analyze golf swings and identify key body parts from video footage. A Front-End system provides golfers with detailed, data-driven feedback to enhance their performance.',
