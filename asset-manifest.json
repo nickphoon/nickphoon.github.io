@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a51e63c6.css",
-    "main.js": "/static/js/main.3f721a0a.js",
+    "main.js": "/static/js/main.c1890a02.js",
     "static/js/453.b21437c2.chunk.js": "/static/js/453.b21437c2.chunk.js",
     "static/media/CosmicQuest.png": "/static/media/CosmicQuest.0169a377871d8189ba7d.png",
     "static/media/WHEEL.png": "/static/media/WHEEL.5608038668f2f0df24fe.png",
@@ -16,11 +16,11 @@
     "static/media/MOM.jpg": "/static/media/MOM.0a9b6de631323abe10f9.jpg",
     "index.html": "/index.html",
     "main.a51e63c6.css.map": "/static/css/main.a51e63c6.css.map",
-    "main.3f721a0a.js.map": "/static/js/main.3f721a0a.js.map",
+    "main.c1890a02.js.map": "/static/js/main.c1890a02.js.map",
     "453.b21437c2.chunk.js.map": "/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a51e63c6.css",
-    "static/js/main.3f721a0a.js"
+    "static/js/main.c1890a02.js"
   ]
 }
