@@ -63,6 +63,14 @@ function App() {
     {
       companyImage: SIT, 
       companyName: 'Singapore Institute of Technology',
+      jobTitle: 'Student Tutor for Web Systems & Technologies',
+      date: 'Jan 2024 - Present',
+      description: 'Assist students with Web System & Technologies Labs',
+      skills: ['PHP', 'Javascript', 'HTML', 'CSS'],
+    },
+    {
+      companyImage: SIT, 
+      companyName: 'Singapore Institute of Technology',
       jobTitle: 'Student Tutor for Programming Fundamentals (Python, C)',
       date: 'Sep 2024 - Nov 2024',
       description: 'Assist students with Python and C programming tutorials',
