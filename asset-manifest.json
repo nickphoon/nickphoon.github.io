@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.a51e63c6.css",
-    "main.js": "/static/js/main.696703cc.js",
-    "static/js/453.b21437c2.chunk.js": "/static/js/453.b21437c2.chunk.js",
+    "main.css": "/static/css/main.e9d8f488.css",
+    "main.js": "/static/js/main.297e1588.js",
+    "static/js/206.d2c9f35b.chunk.js": "/static/js/206.d2c9f35b.chunk.js",
     "static/media/CosmicQuest.png": "/static/media/CosmicQuest.0169a377871d8189ba7d.png",
     "static/media/WHEEL.png": "/static/media/WHEEL.5608038668f2f0df24fe.png",
     "static/media/MediVR.png": "/static/media/MediVR.ee2c22b8197473de9c0c.png",
@@ -14,13 +14,10 @@
     "static/media/hotelSentiment.png": "/static/media/hotelSentiment.5a13581205a22a8e1687.png",
     "static/media/SIT.png": "/static/media/SIT.d0881cfe1dd8ed5f8a6d.png",
     "static/media/MOM.jpg": "/static/media/MOM.0a9b6de631323abe10f9.jpg",
-    "index.html": "/index.html",
-    "main.a51e63c6.css.map": "/static/css/main.a51e63c6.css.map",
-    "main.696703cc.js.map": "/static/js/main.696703cc.js.map",
-    "453.b21437c2.chunk.js.map": "/static/js/453.b21437c2.chunk.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.a51e63c6.css",
-    "static/js/main.696703cc.js"
+    "static/css/main.e9d8f488.css",
+    "static/js/main.297e1588.js"
   ]
 }
