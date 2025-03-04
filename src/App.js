@@ -116,10 +116,10 @@ function App() {
   
   const projects = [
 
-    { title: 'WHEEL OF RESTAURANTS',
-      description: 'A Spin the wheel for deciding on what to eat based on current/selected location. Locations are not accurate for the time being...',
+    { title: 'WHEEL OF RESTAURANTS 𖥞',
+      description: 'A Spin the wheel for deciding on what to eat based on current/selected location. 🍽️',
       image: WHEEL,
-      date:"Dec 2024",
+      date:"Mar 2025",
       techStack: ['HTML', 'CSS', 'JAVASCRIPT'],
       sourceCodeUrl:"https://github.com/nickphoon/WHEELOFRESTAURANT",
       webpageUrl:"https://nickphoon.github.io/WHEELOFRESTAURANT/",
