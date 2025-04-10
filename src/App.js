@@ -117,7 +117,7 @@ function App() {
   
   const projects = [
     { title: 'WanAn Detector',
-      description: 'This project proposes an edge-based drowsiness detection system that leverages a Jetson Nano (a GPU-centric edge device) to collect and process sensor data from a webcam, heart rate sensor, and LiDAR (Light Detection and Ranging), while a Raspberry Pi hosts a local dashboard for real-time monitoring. By performing on-device analytics, the system aims to reduce latency, enhance reliability, and improve overall driver safety',
+      description: 'An edge-based drowsiness detection system that utilizes two edge devices for real-time alerts',
       image: DROWSY,
       date:"Apr 2025",
       techStack: ['MQTT', 'Python', "OpenCV", "dlib", "SQLite"],
