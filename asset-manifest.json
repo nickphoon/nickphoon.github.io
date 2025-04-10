@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e9d8f488.css",
-    "main.js": "/static/js/main.a4063892.js",
+    "main.js": "/static/js/main.60bff62f.js",
     "static/js/206.d2c9f35b.chunk.js": "/static/js/206.d2c9f35b.chunk.js",
+    "static/media/drowsyDetector.png": "/static/media/drowsyDetector.23a8edd9689509ba40cf.png",
     "static/media/CosmicQuest.png": "/static/media/CosmicQuest.0169a377871d8189ba7d.png",
     "static/media/WHEEL.png": "/static/media/WHEEL.5608038668f2f0df24fe.png",
     "static/media/MediVR.png": "/static/media/MediVR.ee2c22b8197473de9c0c.png",
@@ -18,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.e9d8f488.css",
-    "static/js/main.a4063892.js"
+    "static/js/main.60bff62f.js"
   ]
 }
