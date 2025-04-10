@@ -20,6 +20,7 @@ import SignLINGO from './assets/projects/SignLingo.png';
 import CVHelper from './assets/projects/CVHelper.png';
 import GOLF from './assets/projects/Golf.png';
 import WHEEL from './assets/projects/WHEEL.png';
+import DROWSY from './assets/projects/drowsyDetector.png'
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
@@ -64,7 +65,7 @@ function App() {
       companyImage: SIT, 
       companyName: 'Singapore Institute of Technology',
       jobTitle: 'Student Tutor for Web Systems & Technologies',
-      date: 'Jan 2024 - Present',
+      date: 'Jan 2025 - Mar 2025',
       description: 'Assist students with Web System & Technologies Labs',
       skills: ['PHP', 'Javascript', 'HTML', 'CSS'],
     },
@@ -115,6 +116,14 @@ function App() {
   ];
   
   const projects = [
+    { title: 'WanAn Detector',
+      description: 'This project proposes an edge-based drowsiness detection system that leverages a Jetson Nano (a GPU-centric edge device) to collect and process sensor data from a webcam, heart rate sensor, and LiDAR (Light Detection and Ranging), while a Raspberry Pi hosts a local dashboard for real-time monitoring. By performing on-device analytics, the system aims to reduce latency, enhance reliability, and improve overall driver safety',
+      image: DROWSY,
+      date:"Apr 2025",
+      techStack: ['MQTT', 'Python', "OpenCV", "dlib", "SQLite"],
+      sourceCodeUrl:"https://github.com/nickphoon/INF2009_Team30",
+      videoUrl: "https://youtu.be/kIrJbWF5tZA"
+    },
 
     { title: 'WHEEL OF RESTAURANTS 𖥞',
       description: 'A Spin the wheel for deciding on what to eat based on current/selected location. 🍽️',
