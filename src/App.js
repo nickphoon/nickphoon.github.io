@@ -225,6 +225,31 @@ function App() {
     // can put bandify, SiT n Drink, AI-Driven Sports Analysis and Improvement System
 
   ];
+  const groupedExperiences = Object.values(
+    jobExperiences.reduce((acc, job) => {
+      if (!acc[job.companyName]) {
+        acc[job.companyName] = {
+          companyImage: job.companyImage,
+          companyName: job.companyName,
+          jobTitle: [], // Multiple roles
+          date: [], // Multiple dates
+          description: [], // Multiple descriptions,
+          skills: []
+        };
+      }
+  
+      acc[job.companyName].jobTitle.push(job.jobTitle);
+      acc[job.companyName].date.push(job.date);
+      acc[job.companyName].description.push(job.description);
+      acc[job.companyName].skills.push(job.skills)
+  
+      return acc;
+    }, {})
+  ).map(company => ({
+    ...company
+  }));
+  
+  
 
   return (
     
@@ -267,7 +292,8 @@ function App() {
           data-aos={!disableAnimations ? (isMobileView ? "fade-down" : "fade-left") : ""}
         >
           <h1 className="text-4xl font-bold text-center mb-8">Experiences</h1>
-          {jobExperiences.map((experience, index) => (
+          {groupedExperiences.map((experience, index) => (
+            
             <JobExperience
               key={index}
               companyImage={experience.companyImage}
