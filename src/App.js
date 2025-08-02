@@ -5,7 +5,7 @@ import ProjectCard from './components/project';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import ScrollToTop from './components/scrollToTop';
-
+import CONTI from './assets/icons/CONTI.png';
 import SIT from './assets/icons/SIT.png';
 import SCB from './assets/icons/SCB.png';
 import SAF from './assets/icons/SAF.png';
@@ -61,6 +61,14 @@ function App() {
   };
   // Job Experience
   const jobExperiences = [
+    {
+      companyImage: CONTI, 
+      companyName: 'Continental Singapore',
+      jobTitle: 'Software Application Developer Intern',
+      date: 'May 2025 - Sep 2025',
+      description: 'Develop mobile applications in HarmonyOS using ArkTypescript for Customers. Responsible for migrating core modules from Android to HarmonyOS.',
+      skills: ['HarmonyOS', 'ArkTS', 'Java Android'],
+    },
     {
       companyImage: SIT, 
       companyName: 'Singapore Institute of Technology',
