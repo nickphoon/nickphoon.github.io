@@ -10,24 +10,25 @@ import SIT from './assets/icons/SIT.png';
 import SCB from './assets/icons/SCB.png';
 import SAF from './assets/icons/SAF.png';
 import MOM from './assets/icons/MOM.jpg';
+import AUMOVIO from './assets/icons/AUMOVIO.png';
 import HORSAUI from './assets/projects/hotelSentiment.png';
 import COSMIC from './assets/projects/CosmicQuest.png';
 import GROOMGO from './assets/projects/Groom&Go.png';
-// import SITNDRINK from './assets/projects/SiTnDrink.png';
 import PINK from './assets/projects/PinkVisuals.png';
 import MEDIVR from './assets/projects/MediVR.png';
 import SignLINGO from './assets/projects/SignLingo.png';
 import CVHelper from './assets/projects/CVHelper.png';
 import GOLF from './assets/projects/Golf.png';
 import WHEEL from './assets/projects/WHEEL.png';
-import DROWSY from './assets/projects/drowsyDetector.png'
+import DROWSY from './assets/projects/drowsyDetector.png';
+
 function App() {
   const [disableAnimations, setDisableAnimations] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
 
   useEffect(() => {
     AOS.init({
-      
+
       duration: 800, // Animation duration in milliseconds
       easing: 'ease-in-out', // Animation easing
       once: false, // Allow animations to happen more than once
@@ -50,7 +51,7 @@ function App() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  
+
 
   // Handle Navbar Link Click
   const handleLinkClick = () => {
@@ -62,15 +63,27 @@ function App() {
   // Job Experience
   const jobExperiences = [
     {
-      companyImage: CONTI, 
+      companyImage: AUMOVIO,
+      companyName: 'Aumovio Regensburg',
+      jobTitle: 'Software Application Developer Intern',
+      date: 'Oct 2025 - Present',
+      description: ['Optimized user experience by improving navigation flows, enhancing accessibility, and implementing responsive User Interface designs for better engagement.',
+        'Increased application performance  by reducing load times and memory usage through code refactoring, caching strategies, and efficient resource management.',
+        'Developed custom build automation for HarmonyOS projects, simplifying environment setup and reducing build time for development and production releases.'],
+      skills: ['HarmonyOS', 'UI/UX', 'Optimization']
+    },
+    {
+      companyImage: CONTI,
       companyName: 'Continental Singapore',
       jobTitle: 'Software Application Developer Intern',
       date: 'May 2025 - Sep 2025',
-      description: 'Develop mobile applications in HarmonyOS using ArkTypescript for Customers. Responsible for migrating core modules from Android to HarmonyOS.',
+      description: ['Developed cross-platform mobile applications using HarmonyOS ArkTS, delivering production-ready features for external clients.',
+        'Migrated legacy Android (Java) applications to HarmonyOS NEXT, rebuilding native functionalities in ArkTS to ensure seamless performance and ecosystem compliance'
+      ],
       skills: ['HarmonyOS', 'ArkTS', 'Java Android'],
     },
     {
-      companyImage: SIT, 
+      companyImage: SIT,
       companyName: 'Singapore Institute of Technology',
       jobTitle: 'Student Tutor for Web Systems & Technologies',
       date: 'Jan 2025 - Mar 2025',
@@ -78,7 +91,7 @@ function App() {
       skills: ['PHP', 'Javascript', 'HTML', 'CSS'],
     },
     {
-      companyImage: SIT, 
+      companyImage: SIT,
       companyName: 'Singapore Institute of Technology',
       jobTitle: 'Student Tutor for Programming Fundamentals (Python, C)',
       date: 'Sep 2024 - Nov 2024',
@@ -86,7 +99,7 @@ function App() {
       skills: ['Python', 'C Programming Language'],
     },
     {
-      companyImage: SIT, 
+      companyImage: SIT,
       companyName: 'Singapore Institute of Technology',
       jobTitle: 'Student Tutor for Data Structures and Algorithms',
       date: 'Jun 2024 - Aug 2024',
@@ -94,25 +107,25 @@ function App() {
       skills: ['Data Structures', 'Algorithm Optimzation', 'Algorithm Design', 'Python'],
     },
     {
-      companyImage: SCB, 
+      companyImage: SCB,
       companyName: 'Standard Chartered',
       jobTitle: 'Analyst, Security Development (Attachment)',
       date: 'Aug 2023 - Sep 2023',
       description: ['Designed scripts for data scraping and data processing in CI/CD Pipeline',
-      'Aid in data analysis to uncover insights and support decision-making'],
+        'Aid in data analysis to uncover insights and support decision-making'],
       skills: ['CI/CD', 'Azure DevOps', 'Data Analysis', 'Data Processing'],
     },
     {
-      companyImage: SAF, 
+      companyImage: SAF,
       companyName: 'Singapore Armed Forces (SAF)',
       jobTitle: 'Software Developer',
       date: 'Jul 2020 - Jun 2022',
       description: ['Developed Machine Learning Pipelines to help automate daily operations of SAF, RSAF and NAVY for increased efficiency.',
-      'Fine Tuned Computer Vision models to increase object detection accuracy'],
+        'Fine Tuned Computer Vision models to increase object detection accuracy'],
       skills: ['OpenCV', 'Computer Vision', 'Machine Learning', 'Object Detection', 'Microsoft Power BI'],
     },
     {
-      companyImage: MOM, 
+      companyImage: MOM,
       companyName: 'Ministry of Manpower',
       jobTitle: 'Student Intern',
       date: 'Apr 2019 - Sep 2019',
@@ -122,41 +135,43 @@ function App() {
       skills: ['UI/UX', 'User Interface Design', 'Human Computer Interaction'],
     },
   ];
-  
+
   const projects = [
-    { title: 'WanAn Detector',
+    {
+      title: 'WanAn Detector',
       description: 'An edge-based drowsiness detection system that utilizes two edge devices for real-time alerts',
       image: DROWSY,
-      date:"Apr 2025",
+      date: "Apr 2025",
       techStack: ['MQTT', 'Python', "OpenCV", "dlib", "SQLite"],
-      sourceCodeUrl:"https://github.com/nickphoon/INF2009_Team30",
+      sourceCodeUrl: "https://github.com/nickphoon/INF2009_Team30",
       videoUrl: "https://youtu.be/kIrJbWF5tZA"
     },
 
-    { title: 'WHEEL OF RESTAURANTS 𖥞',
+    {
+      title: 'WHEEL OF RESTAURANTS 𖥞',
       description: 'A Spin the wheel for deciding on what to eat based on current/selected location. 🍽️',
       image: WHEEL,
-      date:"Mar 2025",
+      date: "Mar 2025",
       techStack: ['HTML', 'CSS', 'JAVASCRIPT'],
-      sourceCodeUrl:"https://github.com/nickphoon/WHEELOFRESTAURANT",
-      webpageUrl:"https://nickphoon.github.io/WHEELOFRESTAURANT/",
+      sourceCodeUrl: "https://github.com/nickphoon/WHEELOFRESTAURANT",
+      webpageUrl: "https://nickphoon.github.io/WHEELOFRESTAURANT/",
     },
     {
       title: 'AI-Driven Sport Analysis and Improvement System',
       description: 'This project develops a Proof-of-Concept AI model using Computer Vision to analyze golf swings and identify key body parts from video footage. A Front-End system provides golfers with detailed, data-driven feedback to enhance their performance.',
       image: GOLF,
-      date:"Nov 2024",
-      techStack: ['Django','Mediapipe', 'mongoDB Atlas','Google Cloud Platform', 'Docker', 'TailWindCSS'],
+      date: "Nov 2024",
+      techStack: ['Django', 'Mediapipe', 'mongoDB Atlas', 'Google Cloud Platform', 'Docker', 'TailWindCSS'],
       videoUrl: "https://www.youtube.com/watch?v=-C7gg1LaQ08"
     },
 
-   
+
     {
       title: 'CVHelper',
       description: 'A Python GUI developed to reduce time spent processing data such as converting videos to frames, data augmentation and sorting images by classes',
       image: CVHelper,
-      date:"Oct 2024",
-      techStack: ['PyQT6','OpenCV', 'NumPy'],
+      date: "Oct 2024",
+      techStack: ['PyQT6', 'OpenCV', 'NumPy'],
       sourceCodeUrl: "https://github.com/nickphoon/CVHelper.git"
     },
     {
@@ -164,11 +179,11 @@ function App() {
       description: 'A sign language-learning mobile application that serves as a dynamic educational tool, providing students with real-time feedback and practical exercises.',
       image: SignLINGO,
       date: "Mar 2024",
-      techStack: ['Kotlin','MediaPipe', 'Object Detection'],
+      techStack: ['Kotlin', 'MediaPipe', 'Object Detection'],
       videoUrl: "https://youtu.be/2S5p5F2Antk"
     },
-    
-  
+
+
     {
       title: 'MediVR',
       description: 'A Unity-built mobile app designed to help healthcare students transition from school to real-world clinical settings through user-centered experiments and a mixed reality medical simulator.',
@@ -192,10 +207,10 @@ function App() {
       date: "Jul 2023",
       techStack: ['Javascript', 'Data Structures and Algorithms'],
       videoUrl: "https://youtu.be/_B1rxbQVOoc",
-      sourceCodeUrl:"https://github.com/nickphoon/pinkvisuals",
-      webpageUrl:"https://nickphoon.github.io/pinkvisuals/home.html",
+      sourceCodeUrl: "https://github.com/nickphoon/pinkvisuals",
+      webpageUrl: "https://nickphoon.github.io/pinkvisuals/home.html",
     },
-    
+
     {
       title: 'Cosmic Quest',
       description: 'Application of object-oriented programming to design a space exploration game to educate users on the different planets and its environments.',
@@ -211,23 +226,14 @@ function App() {
       date: "Sep 2022",
       techStack: ['Flask', 'Selenium', 'Matplotlib'],
       videoUrl: "https://youtu.be/6rroISIO6HI",
-      sourceCodeUrl:"https://github.com/nickphoon/HORSAUI",
-    },
-    // {
-    //   title: 'SiT n Drink',
-    //   description: 'An e-commerce website using PHP and mySQl that supports email communication using PHPMailer.',
-    //   image: SITNDRINK,
-    //   techStack: ['PHP', 'JavaScript', "MySQL"],
-    //   videoUrl: ""
-    // },
-    
-
-    // can put bandify, SiT n Drink, AI-Driven Sports Analysis and Improvement System
+      sourceCodeUrl: "https://github.com/nickphoon/HORSAUI",
+    }
 
   ];
   const groupedExperiences = Object.values(
     jobExperiences.reduce((acc, job) => {
       if (!acc[job.companyName]) {
+
         acc[job.companyName] = {
           companyImage: job.companyImage,
           companyName: job.companyName,
@@ -237,53 +243,53 @@ function App() {
           skills: []
         };
       }
-  
+
       acc[job.companyName].jobTitle.push(job.jobTitle);
       acc[job.companyName].date.push(job.date);
       acc[job.companyName].description.push(job.description);
       acc[job.companyName].skills.push(job.skills)
-  
+
       return acc;
     }, {})
   ).map(company => ({
     ...company
   }));
-  
-  
+
+
 
   return (
-    
+
     <div className="bg-gray-800 min-h-screen text-gray-400 overflow-x-hidden">
       <Navbar onLinkClick={handleLinkClick} /> {/* Pass the click handler to Navbar */}
       <div className="flex flex-col items-center justify-center mt-20">
-        
-      <section
-  id="about"
-  className="w-full max-w-5xl min-h-screen flex items-center justify-center p-8 rounded-lg shadow-lg"
->
-  <div className="text-center">
-    {/* Your name animates first */}
-    <h1
-      className="text-5xl font-bold"
-      style={{ color: '#4ca4ab' }}
-      data-aos={!disableAnimations ? "fade-up" : ""}
-      data-aos-delay="0"
-    >
-      Hi, I'm Nicholas Phoon
-    </h1>
 
-    {/* About Me section animates together */}
-    <div
-      data-aos={!disableAnimations ? "fade-up" : ""}
-      data-aos-delay="1000"
-    >
-      <h2 className="text-3xl font-bold mt-4">About Me</h2>
-      <p className="mt-4">
-        Year 3 Student pursuing a degree in Software Engineering in Singapore Institute of Technology with a strong foundation in programming languages including Python, Javascript, Java, C/C++, C#, SQL, and Kotlin. Experienced in developing machine learning solutions for the Singapore Armed Forces (SAF), leveraging object detection algorithms to automate and optimize daily operations. Skilled in building robust applications using modern frameworks such as Django, Flask, and React, with a focus on delivering user-centric and efficient software solutions.
-      </p>
-    </div>
-  </div>
-</section>
+        <section
+          id="about"
+          className="w-full max-w-5xl min-h-screen flex items-center justify-center p-8 rounded-lg shadow-lg"
+        >
+          <div className="text-center">
+            {/* Your name animates first */}
+            <h1
+              className="text-5xl font-bold"
+              style={{ color: '#4ca4ab' }}
+              data-aos={!disableAnimations ? "fade-up" : ""}
+              data-aos-delay="0"
+            >
+              Hi, I'm Nicholas Phoon
+            </h1>
+
+            {/* About Me section animates together */}
+            <div
+              data-aos={!disableAnimations ? "fade-up" : ""}
+              data-aos-delay="1000"
+            >
+              <h2 className="text-3xl font-bold mt-4">About Me</h2>
+              <p className="mt-4">
+                Year 3 Student pursuing a degree in Software Engineering in Singapore Institute of Technology with a strong foundation in programming languages including Python, Javascript, Java, C/C++, C#, SQL, and Kotlin. Experienced in developing machine learning solutions for the Singapore Armed Forces (SAF), leveraging object detection algorithms to automate and optimize daily operations. Skilled in building robust applications using modern frameworks such as Django, Flask, and React, with a focus on delivering user-centric and efficient software solutions.
+              </p>
+            </div>
+          </div>
+        </section>
 
 
         <section
@@ -293,7 +299,7 @@ function App() {
         >
           <h1 className="text-4xl font-bold text-center mb-8">Experiences</h1>
           {groupedExperiences.map((experience, index) => (
-            
+
             <JobExperience
               key={index}
               companyImage={experience.companyImage}
@@ -307,21 +313,21 @@ function App() {
         </section>
 
         <section
-      id="projects"
-      className="w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
-      data-aos={!disableAnimations ? (isMobileView ? "fade-down" : "fade-right") : ""}x
-    >
-      <h1 className="text-4xl font-bold text-center">Projects</h1>
-      
-      {/* Project Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-8">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
-      </div>
-    </section>
-    <ScrollToTop />
-        
+          id="projects"
+          className="w-full max-w-5xl p-8 rounded-lg shadow-lg mt-8"
+          data-aos={!disableAnimations ? (isMobileView ? "fade-down" : "fade-right") : ""} x
+        >
+          <h1 className="text-4xl font-bold text-center">Projects</h1>
+
+          {/* Project Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 mt-8">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+        </section>
+        <ScrollToTop />
+
       </div>
     </div>
   );
