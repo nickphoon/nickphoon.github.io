@@ -7,6 +7,7 @@ import { Link } from 'react-scroll';
 
 const navigation = [
   { name: 'About', to: 'about' },
+  { name: 'Skills', to: 'skills'},
   { name: 'Experience', to: 'experience' },
   { name: 'Projects', to: 'projects' },
 ];
