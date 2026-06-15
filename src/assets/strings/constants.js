@@ -21,10 +21,10 @@
       companyName: 'Aumovio Regensburg',
       jobTitle: 'Software Application Developer Intern',
       date: 'Oct 2025 - Present',
-      description: ['Optimized user experience by improving navigation flows, enhancing accessibility, and implementing responsive User Interface designs for better engagement.',
-        'Increased application performance  by reducing load times and memory usage through code refactoring, caching strategies, and efficient resource management.',
+      description: ['Engineered a high-precision attendance tracking application, improving device discovery and session initialization by leveraging UWB (Ultra-Wideband) and Core Bluetooth with SwiftUI and UIKit.',
+        'Implemented secure user identity and real-time data persistence using Firebase (Auth & Firestore), while utilizing WidgetKit and ActivityKit to enable background UWB ranging and Live Activities.',
         'Developed custom build automation for HarmonyOS projects, simplifying environment setup and reducing build time for development and production releases.'],
-      skills: ['HarmonyOS', 'UI/UX', 'Optimization']
+      skills: ['SwiftUI', 'UIKit', 'CoreBluetooth', 'Nearby Interaction Kit', 'Widget Kit', 'Live Activity Kit', 'Firebase Authentication / FireStore', 'HarmonyOS']
     },
     {
       companyImage: CONTI,
