@@ -1,9 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.4260f9ef.css",
-    "main.js": "/static/js/main.7acb21f6.js",
-    "static/js/206.d2c9f35b.chunk.js": "/static/js/206.d2c9f35b.chunk.js",
+    "main.css": "/static/css/main.77f0a3b0.css",
+    "main.js": "/static/js/main.d2801da2.js",
+    "static/js/620.e9c9956d.chunk.js": "/static/js/620.e9c9956d.chunk.js",
     "static/media/drowsyDetector.png": "/static/media/drowsyDetector.23a8edd9689509ba40cf.png",
+    "static/media/SwiftUI.png": "/static/media/SwiftUI.72fe4142e3fa8001cd25.png",
+    "static/media/SwiftData.png": "/static/media/SwiftData.db69e5758350ebdae1b5.png",
+    "static/media/ArkUI.png": "/static/media/ArkUI.7b69078cc3bf6084f4fb.png",
+    "static/media/DB.png": "/static/media/DB.df797363a500f06b8c7c.png",
+    "static/media/Hypium.png": "/static/media/Hypium.a6ff4225f3f611e90526.png",
     "static/media/CosmicQuest.png": "/static/media/CosmicQuest.0169a377871d8189ba7d.png",
     "static/media/WHEEL.png": "/static/media/WHEEL.5608038668f2f0df24fe.png",
     "static/media/MediVR.png": "/static/media/MediVR.ee2c22b8197473de9c0c.png",
@@ -12,13 +17,22 @@
     "static/media/SignLingo.png": "/static/media/SignLingo.cdf1915b9fb4ae5752cf.png",
     "static/media/PinkVisuals.png": "/static/media/PinkVisuals.6588803934b58764c65e.png",
     "static/media/Groom&Go.png": "/static/media/Groom&Go.3357479dcb5eb30cc9d5.png",
+    "static/media/XCTest.png": "/static/media/XCTest.186f84116e1efb7cfd84.png",
+    "static/media/LiveActivityKit.png": "/static/media/LiveActivityKit.392b9724e19facef22b9.png",
+    "static/media/ArkTS.png": "/static/media/ArkTS.0aaf2480f5488038a539.png",
+    "static/media/SwiftTest.png": "/static/media/SwiftTest.09655820f0896eb32898.png",
     "static/media/hotelSentiment.png": "/static/media/hotelSentiment.5a13581205a22a8e1687.png",
+    "static/media/WidgetKit.png": "/static/media/WidgetKit.a4f7d2e4e68a83f98259.png",
+    "static/media/UWB.png": "/static/media/UWB.d3cef419e26bae0f3d59.png",
     "static/media/SIT.png": "/static/media/SIT.d0881cfe1dd8ed5f8a6d.png",
     "static/media/MOM.jpg": "/static/media/MOM.0a9b6de631323abe10f9.jpg",
-    "index.html": "/index.html"
+    "index.html": "/index.html",
+    "main.77f0a3b0.css.map": "/static/css/main.77f0a3b0.css.map",
+    "main.d2801da2.js.map": "/static/js/main.d2801da2.js.map",
+    "620.e9c9956d.chunk.js.map": "/static/js/620.e9c9956d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4260f9ef.css",
-    "static/js/main.7acb21f6.js"
+    "static/css/main.77f0a3b0.css",
+    "static/js/main.d2801da2.js"
   ]
 }
